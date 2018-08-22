@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Countries</string>
+    <string name="retry">Retry</string>
+    <string name="all_countries">All Countries</string>
+</resources>

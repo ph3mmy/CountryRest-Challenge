@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_16">16dp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="button_height_40">40dp</dimen>
+    <dimen name="progress_width_36">36dp</dimen>
+</resources>

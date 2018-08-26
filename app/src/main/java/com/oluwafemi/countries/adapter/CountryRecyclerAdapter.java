@@ -35,7 +35,7 @@ public class CountryRecyclerAdapter extends RecyclerView.Adapter<CountryRecycler
     @NonNull
     @Override
     public CountryHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(mContext).inflate(R.layout.row_item_currency, parent, false);
+        View view = LayoutInflater.from(mContext).inflate(R.layout.row_item_country, parent, false);
         return new CountryHolder(view);
     }
 
@@ -61,7 +61,12 @@ public class CountryRecyclerAdapter extends RecyclerView.Adapter<CountryRecycler
             countries.clear();
             countries.addAll(newCountries);
         }
-        Log.e(TAG, "addCountries: passed country == " + newCountries.size() );
+    }
+
+    public void removeItem(int position) {
+        countries.remove(position);
+        notifyItemRemoved(position);
+        notifyItemRangeChanged(position, countries.size());
     }
 
     class CountryHolder extends RecyclerView.ViewHolder {
